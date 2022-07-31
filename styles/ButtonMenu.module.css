@@ -1,8 +1,4 @@
 .btnMenu{
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
     width: 150px;
     height: 60px;
     font-family: 'Bicubik';
@@ -20,4 +16,17 @@
     background-clip: content-box, border-box;
     cursor: pointer;
     color: #dfdddd;
+    margin-top: 20px;
+}
+
+.teste{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
 }
