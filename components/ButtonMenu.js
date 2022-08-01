@@ -11,9 +11,12 @@ const ButtonMenu = () => {
     }
 
     return (
-        <div className={styles.teste}>
+        <div className={styles.wrapperBtn}>
             <MenuOptions isActive={isActive}/>
-            <button onClick={toggle} className={styles.btnMenu} title='Menu'> {isActive ? 'Opcoes' : 'Menu'} </button>
+            <button onClick={toggle} 
+                    className={styles.btnMenu} 
+                    title='Menu'> {isActive ? 'Opcoes' : 'Menu'} 
+            </button>
         </div>
     )
 }

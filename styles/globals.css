@@ -16,6 +16,13 @@ h1, h2, h3{
   font-family: 'Bicubik';
   text-transform: uppercase;
   color: #dfdddd;
+  letter-spacing: 2px;
+}
+
+p{
+  color: #dfdddd;
+  font-family: 'Roboto';
+  font-style: italic;
 }
 
 @font-face {
