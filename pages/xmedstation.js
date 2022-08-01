@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/xMedStation.module.css'
 import ButtonMenu from '../components/ButtonMenu'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 
 export default function xmedstation() {
   return (
@@ -24,6 +25,35 @@ export default function xmedstation() {
                 <div className={styles.description}>
                     <p> O <strong> xMed Station </strong> é um ambiente de estudo e treinamento para estudantes e profissionais da área da saúde. Formado por uma estação composta por laboratórios que simulam ambientes de treinamentos biomédicos, enfermagem, médicos e tecnologias assistivas de Neuroreabilitação, integrado aos hardwares que fornecem Biofeedback. </p>
                 </div>
+            </div>
+        </section>
+
+        <section className={styles.software}>
+            <h3 className={styles.titleSoftware}> Softwares <ChevronLeftIcon/> </h3>
+
+            <div className={styles.cardProducts}>
+                <div className={styles.card}>
+                    <img src="images/haptx-vr-glove.jpg" alt="" className={styles.image}/>
+
+                    <div className={styles.cardContent}>
+                        <h4 className={styles.cardTitle}> Anatomia  </h4>
+                        <p className={styles.cardDescription}> Descrição do software </p>
+                        <a href="#" className={styles.cardButton}> Conheça! </a>
+                    </div>
+                    <div className={styles.borderSquare}></div>
+                </div>
+
+                <div className={styles.card}>
+                    <img src="images/haptx-vr-glove.jpg" alt="" className={styles.image}/>
+
+                    <div className={styles.cardContent}>
+                        <h4 className={styles.cardTitle}> Terapia Visual  </h4>
+                        <p className={styles.cardDescription}> Descrição do software </p>
+                        <a href="#" className={styles.cardButton}> Conheça! </a>
+                    </div>
+                    <div className={styles.borderSquare}></div>
+                </div>
+
             </div>
         </section>
       </main>
