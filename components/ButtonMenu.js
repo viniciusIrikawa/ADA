@@ -15,6 +15,7 @@ const ButtonMenu = () => {
             <MenuOptions isActive={isActive}/>
             <button onClick={toggle} 
                     className={styles.btnMenu} 
+                    style={{opacity: isActive ? 1 : 0.3 }}
                     title='Menu'> {isActive ? 'Opcoes' : 'Menu'} 
             </button>
         </div>

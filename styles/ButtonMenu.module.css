@@ -17,11 +17,7 @@
     cursor: pointer;
     color: #dfdddd;
     margin-top: 20px;
-    opacity: 0.3;
     transition: .5s;
-}
-.btnMenu:hover{
-    opacity: 1;
 }
 
 .wrapperBtn{
