@@ -2,8 +2,27 @@ import Head from 'next/head'
 import styles from '../styles/QuemSomos.module.css'
 import ButtonMenu from '../components/ButtonMenu'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import { useState } from 'react';
 
 export default function quemsomos() {
+
+    const [team, setTeam] = useState([
+        {id: 1, name: 'Tássia Nunes', function: 'CTO', logo: 'images/logo.png', imgprofile: 'images/tassia_nunes.jpeg'},
+        {id: 2, name: 'Tâmara Nunes', function: 'CEO', logo: 'images/logo.png', imgprofile: 'images/tamara_nunes.jpeg'},
+        {id: 3, name: 'Jehnifer Marques',function: 'CO-CEO', logo: 'images/logo.png', imgprofile: 'images/jhenifer_marques.jpeg'},
+        {id: 4, name: 'João Paulo', function: 'Desenvolvedor RV', logo: 'images/logo.png', imgprofile: 'images/joao_paulo.jpeg'},
+        {id: 5, name: 'Rodrigo Amaral', function: 'Modelador 3D', logo: 'images/logo.png', imgprofile: 'images/rodrigo_amaral.png'},
+        {id: 6, name: 'Mário Fernando', function: 'Desenvolvedor Hardware', logo: 'images/logo.png', imgprofile: 'images/mario_fernando.jpeg'},
+        {id: 7, name: 'Vinícius Irikawa', function: 'Desenvolvedor Front End', logo: 'images/logo.png', imgprofile: 'images/vinicius_irikawa.jpeg'},
+        {id: 8, name: 'Matheus Augusto', function: 'Desenvolvedor RV', logo: 'images/logo.png', imgprofile: 'images/matheus.jpeg'},
+        {id: 9, name: 'Aerton Castro', function: 'Engenheiro de Software e Game Dev', logo: 'images/logo.png', imgprofile: 'images/aerton_castro.jpeg'},
+        {id: 10, name: 'Yago Souto', function: 'Desenvolvedor Hardware e Pesquisador Hardware', logo: 'images/logo.png', imgprofile: 'images/yago_souto.jpeg'},
+        {id: 11, name: 'Gustavo Bruno', function: 'Desenvolvedor Hardware', logo: 'images/logo.png', imgprofile: 'images/gustavo_bruno.jpeg'},
+        {id: 12, name: 'Victor Abdalla', function: 'Desenvolvedor Hardware', logo: 'images/logo.png', imgprofile: 'images/victor_abdalla.jpeg'},
+        {id: 13, name: 'Cleiton Mariano', function: 'Desenvolvedor Hardware', logo: 'images/logo.png', imgprofile: 'images/cleiton_mariano.jpeg'},
+        {id: 14, name: 'Igor Thiago', function: 'Head Administrativo', logo: 'images/logo.png', imgprofile: 'images/igor_thiago.jpeg'},
+        {id: 15, name: 'Rubens Fonseca', function: 'Engenheiro Têxtil', logo: 'images/logo.png', imgprofile: 'images/rubens_fonseca.jpeg'} 
+    ])
 
     return (
         <div >
@@ -15,12 +34,12 @@ export default function quemsomos() {
 
             <main className={styles.main}>
                 <section className={styles.about}>
-                    <h1 className={styles.title}> <ChevronRightIcon /> Por que Ada?  </h1>
+                    <h1 className={styles.title}> <ChevronRightIcon/> Por que Ada?  </h1>
 
                     <div className={styles.container}>
                         <div className={styles.description}>
                             <p> 
-                                Fundada por duas mulheres jovem negras, nordestinas e cientistas. A <strong> Ada </strong> tem como missão tornar o Metaverso uma realidade, conectando o mundo real com o virtual. 
+                                Fundada por duas mulheres jovens, negras, nordestinas e cientistas. A <strong> Ada </strong> tem como missão tornar o Metaverso uma realidade, conectando o mundo real com o virtual. 
                             </p>
                             <p>
                                 Para isso, o time Ada, formado por Pesquisadores, Engenheiros, Neuroengenheiros, Neurocientistas, Desenvolvedores de games e Programadores, visa integrar as tecnologias de Realidade Virtual (VR), Realidade Aumentada (AR) e Internet das Coisas (IoT), possibilitando experiências imersivas e feedbacks sensoriais no Metaverso. 
@@ -36,7 +55,24 @@ export default function quemsomos() {
                             alt='Ada Lovelace'/>
                     </div>
 
-                </section>           
+                </section>
+
+                <section className={styles.team}>
+                    <h3 className={styles.title}> <ChevronRightIcon/> Nosso time </h3>
+                    
+                    <div className={styles.wrapperProfiles}>
+                        {team.map(item => (
+                            <div className={styles.cardProfile} key={item.id}>
+                                <div className={styles.background}>
+                                    <img className={styles.imgLogo} src={item.logo} alt="Ada"/>
+                                </div>
+                                <img className={styles.imgProfile} src={item.imgprofile} alt={item.name}/>
+                                <p className={styles.name}> {item.name} </p>
+                                <p className={styles.role}> {item.function} </p>
+                            </div>
+                        ))}
+                    </div>
+                </section>
             </main>
 
             <ButtonMenu />
