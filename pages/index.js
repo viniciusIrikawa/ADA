@@ -12,7 +12,17 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1> Background </h1>
+        <div className={styles.wrapperTitle}>
+          <h1 className={styles.title}> Ada </h1>
+        </div>
+        <video className={styles.videoBackground} 
+                src="videos/video_background.mp4"
+                type="video/mp4"
+                autoPlay
+                muted
+                loop>
+        </video>
+     
         <ButtonMenu/>
       </main>
     </div>
