@@ -7,7 +7,8 @@ import PhoneIcon from '@mui/icons-material/Phone';
 const MenuOptions = ({ isActive }) => {
 
   return (
-      <ul className={`${styles.wrapperOptions}  ${isActive && styles.active}` }>
+      <ul className={`${styles.wrapperOptions}  
+                      ${isActive && styles.active}`}>
           <li  className={styles.li} title='Home'> <HomeIcon/> </li>
           <li  className={styles.li} title='Quem somos'> <InfoIcon/> </li>
           <li  className={styles.li} title='Contato'> <PhoneIcon/> </li>

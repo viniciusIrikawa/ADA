@@ -16,7 +16,7 @@
 /* ABOUT */
 .about{
     width: 100%;
-    height: 80vh;
+    height: 95vh;
     padding: 30px 10px;
 }
 
@@ -45,6 +45,7 @@
 .wrapperBtn{
     margin-top: 30px;
     width: 90%;
+    box-shadow: 5px 5px 10px rgb(65 63 63 / 30%);
 }
 
 .btnConheca{

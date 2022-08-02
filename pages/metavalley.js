@@ -26,15 +26,15 @@ export default function metavalley() {
                             <p>
                                 O <strong> MetaValley </strong> é o hub de inovação do Metaverso. Seu ambiente foi criado para fomentar a cultura do empreendedorismo, conectar e facilitar a integração dos apaixonados por inovação, criatividade e tecnologia. Explore as maiores regioes da cultura empreendedora, conecte-se com mentes criativas, participe de pitches e desenhe a sua trajetória empreendedora. Venha para o MetaValley e crie sua startup no metaverso participando da nova era de “garagens” formadoras de startups.
                             </p>
-                            <span className={styles.wrapperBtn}>
+                            <a className={styles.wrapperBtn} href="#" target='_blank' >
                                 <button className={styles.btnConheca}> Conheça! </button>
-                            </span>
+                            </a>
                         </div>
                     </div>
                 </section>           
             </main>
 
-            {/* <ButtonMenu /> */}
+            <ButtonMenu />
         </div>
     )
 }
