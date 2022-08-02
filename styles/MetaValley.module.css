@@ -1,0 +1,79 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10px;
+    background: linear-gradient(45deg, #9c4be9, #bc25b6c4, #01dce6d6)
+}
+
+.backgroundWrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+}
+
+/* ABOUT */
+.about{
+    width: 100%;
+    height: 80vh;
+    padding: 30px 10px;
+}
+
+.title{
+    color: #00f5ce;
+    display: flex;
+    align-items: center;
+}
+
+
+.container{}
+.description{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.1em;
+}
+
+.description p{
+    width: 100%;
+    margin: 20px 0;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.wrapperBtn{
+    margin-top: 30px;
+    width: 90%;
+}
+
+.btnConheca{
+    padding: 15px 20px;
+    background: linear-gradient(to right, #ef82f5, #f200ff);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    font-size: 1.3em;
+    clip-path: polygon(11% 25%, 24% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    transition: .3s;
+}
+
+.btnConheca:hover{
+    clip-path: polygon(25% 0%, 75% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
+
+}
+
+@media screen and (min-width: 768px) {
+    .about{
+        width: 80%;
+        padding: 80px 10px;
+    }
+
+    .wrapperBtn{
+        margin-top: 50px;
+        width: 200px;
+    }
+    
+}
+

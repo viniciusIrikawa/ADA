@@ -12,6 +12,14 @@ body{
   background-color: #1c1c1c;
 }
 
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
 h1, h2, h3{
   font-family: 'Bicubik';
   text-transform: uppercase;
