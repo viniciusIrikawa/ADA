@@ -6,6 +6,7 @@
     padding: 10px 10px 20px 10px;
     z-index: 10;
     backdrop-filter: blur(5px);
+    display: none;
 }
 
 .span{
@@ -42,7 +43,7 @@
 .image{
     width: 100%;
     border-radius: 15px;
-    filter: brightness(0.6);
+    filter: brightness(0.4);
 }
 
 .titleApp{
@@ -54,6 +55,10 @@
     font-size: 1.5em;
     font-family: 'Bicubik';
     text-align: center;
+}
+
+.active{
+    display: block;
 }
 
 @media screen and (min-width: 768px) {

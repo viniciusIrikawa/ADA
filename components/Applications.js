@@ -2,7 +2,7 @@ import styles from '../styles/Applications.module.css'
 import Link from 'next/link'
 import { useState } from 'react';
 
-const Applications = ({ isActive }) => {
+const Applications = ({ appIsActive }) => {
 
   const [apps, setApps] = useState([
     {id: 1, name: 'xMed Station', image: 'images/haptx-vr-glove.jpg', linkPage: '/xmedstation'},
@@ -10,7 +10,7 @@ const Applications = ({ isActive }) => {
   ])
 
   return (
-      <div className={styles.container}> 
+      <div className={`${styles.container} ${appIsActive && styles.active}`}> 
         <span className={styles.span}> Aplicacoes </span>
         <div className={styles.wrapperApps}>
           {apps.map( item => (

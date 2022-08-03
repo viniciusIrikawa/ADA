@@ -5,32 +5,43 @@ import InfoIcon from '@mui/icons-material/Info';
 import PhoneIcon from '@mui/icons-material/Phone';
 import Link from 'next/link'
 import Applications from './Applications';
+import React, { useContext } from 'react'
+import Context from '../Context';
 
-const MenuOptions = ({ isActive }) => {
+const MenuOptions = ({ menuOptionsIsActive }) => {
+
+  const {appIsActive ,setAppIsActive} = useContext(Context);
 
   return (
       <ul className={`${styles.wrapperOptions}  
-                      ${isActive && styles.active}`}>
+                      ${ menuOptionsIsActive && styles.active}`}>
           <Link href='/'>
-            <li  className={styles.li} title='Home'> 
+            <li  className={styles.li} 
+                 title='Home' 
+                 onClick={() => setAppIsActive(!appIsActive)}> 
                 <HomeIcon/> 
             </li>
           </Link> 
 
           <Link href='/quemsomos'> 
-            <li  className={styles.li} title='Quem somos'> 
+            <li  className={styles.li} 
+                 title='Quem somos' 
+                 onClick={() => setAppIsActive(!appIsActive)}> 
                 <InfoIcon/>
             </li>
           </Link> 
 
-          <Link href='/contato'>
-            <li  className={styles.li} title='Contato'> 
+          <Link href='/contato' >
+            <li  className={styles.li} 
+                 title='Contato' 
+                 onClick={() => setAppIsActive(!appIsActive)}> 
                 <PhoneIcon/>  
             </li>
           </Link>
           
           <button className={styles.li} 
-                  title='Aplicações'>
+                  title='Aplicações'
+                  onClick={() => setAppIsActive(!appIsActive)} >
             <AppsIcon/>  
           </button>
       </ul>

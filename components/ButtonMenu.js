@@ -1,24 +1,26 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import styles from '../styles/ButtonMenu.module.css'
 import Applications from './Applications';
 import MenuOptions from './MenuOptions';
+import Context from '../Context';
 
 const ButtonMenu = () => {
 
-    const [isActive, setIsActive] = useState(false);
+    const {appIsActive, setAppIsActive} = useContext(Context);
 
-    const toggle  = () => {
-        setIsActive(!isActive)
-    }
+    const [menuOptionsIsActive, setMenuOptionsIsActive] = useState(false);
 
     return (
         <div className={styles.wrapperBtn}>
-            <Applications/>
-            <MenuOptions isActive={isActive}/>
-            <button onClick={toggle} 
+            <Applications appIsActive={appIsActive}/>
+            <MenuOptions menuOptionsIsActive={menuOptionsIsActive}/>
+            <button onClick={ () => {
+                        setAppIsActive(false)
+                        setMenuOptionsIsActive(!menuOptionsIsActive)
+                    }} 
                     className={styles.btnMenu} 
-                    style={{opacity: isActive ? 1 : 0.3 }}
-                    title='Menu'> {isActive ? 'Opcoes' : 'Menu'} 
+                    style={{opacity: menuOptionsIsActive ? 1 : 0.3 }}
+                    title='Menu'> {menuOptionsIsActive ? 'Opcoes' : 'Menu'}
             </button>
         </div>
     )
