@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styles from '../styles/ButtonMenu.module.css'
+import Applications from './Applications';
 import MenuOptions from './MenuOptions';
 
 const ButtonMenu = () => {
@@ -12,6 +13,7 @@ const ButtonMenu = () => {
 
     return (
         <div className={styles.wrapperBtn}>
+            {/* <Applications/> */}
             <MenuOptions isActive={isActive}/>
             <button onClick={toggle} 
                     className={styles.btnMenu} 

@@ -4,6 +4,7 @@ import AppsIcon from '@mui/icons-material/Apps';
 import InfoIcon from '@mui/icons-material/Info';
 import PhoneIcon from '@mui/icons-material/Phone';
 import Link from 'next/link'
+import Applications from './Applications';
 
 const MenuOptions = ({ isActive }) => {
 
@@ -28,9 +29,10 @@ const MenuOptions = ({ isActive }) => {
             </li>
           </Link>
           
-          <li  className={styles.li} title='Aplicações'>
+          <button className={styles.li} 
+                  title='Aplicações'>
             <AppsIcon/>  
-          </li>
+          </button>
       </ul>
   )
 }
