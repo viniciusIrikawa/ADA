@@ -13,7 +13,7 @@ const ButtonMenu = () => {
 
     return (
         <div className={styles.wrapperBtn}>
-            {/* <Applications/> */}
+            <Applications/>
             <MenuOptions isActive={isActive}/>
             <button onClick={toggle} 
                     className={styles.btnMenu} 
