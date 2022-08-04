@@ -9,7 +9,8 @@ const Applications = ({ appIsActive }) => {
 
   const [apps, setApps] = useState([
     {id: 1, name: 'xMed Station', image: 'images/haptx-vr-glove.jpg', linkPage: '/xmedstation'},
-    {id: 2, name: 'Meta Valley', image: 'images/haptx-vr-glove.jpg', linkPage: '/metavalley'}
+    {id: 2, name: 'Meta Valley', image: 'images/haptx-vr-glove.jpg', linkPage: '/metavalley'},
+    {id: 3, name: 'Ada 4 All', image: 'images/haptx-vr-glove.jpg', linkPage: '/ada4all'}
   ])
 
   return (
