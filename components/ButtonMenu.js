@@ -19,7 +19,7 @@ const ButtonMenu = () => {
                         setMenuOptionsIsActive(!menuOptionsIsActive)
                     }} 
                     className={styles.btnMenu} 
-                    style={{opacity: menuOptionsIsActive ? 1 : 0.3 }}
+                    style={{opacity: menuOptionsIsActive ? 1 : 0.5 }}
                     title='Menu'> {menuOptionsIsActive ? 'Opcoes' : 'Menu'}
             </button>
         </div>

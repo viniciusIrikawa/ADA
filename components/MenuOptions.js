@@ -18,7 +18,7 @@ const MenuOptions = ({ menuOptionsIsActive }) => {
           <Link href='/'>
             <li  className={styles.li} 
                  title='Home' 
-                 onClick={() => setAppIsActive(!appIsActive)}> 
+                 onClick={() => setAppIsActive(false)}> 
                 <HomeIcon/> 
             </li>
           </Link> 
@@ -26,7 +26,7 @@ const MenuOptions = ({ menuOptionsIsActive }) => {
           <Link href='/quemsomos'> 
             <li  className={styles.li} 
                  title='Quem somos' 
-                 onClick={() => setAppIsActive(!appIsActive)}> 
+                 onClick={() => setAppIsActive(false)}> 
                 <InfoIcon/>
             </li>
           </Link> 
@@ -34,7 +34,7 @@ const MenuOptions = ({ menuOptionsIsActive }) => {
           <Link href='/contato' >
             <li  className={styles.li} 
                  title='Contato' 
-                 onClick={() => setAppIsActive(!appIsActive)}> 
+                 onClick={() => setAppIsActive(false)}> 
                 <PhoneIcon/>  
             </li>
           </Link>

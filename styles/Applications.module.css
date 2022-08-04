@@ -1,14 +1,14 @@
 .container{
     width: 100%;
+    height: 0;
     margin-bottom: 10px;
     background: linear-gradient(to right, #00ffe0a6,#2050ffb0);
     border-radius: 15px;
-    padding: 10px 10px 20px 10px;
     z-index: 10;
     backdrop-filter: blur(5px);
-    display: none;
+    overflow-y: scroll;
+    transition: .5s;
 }
-
 .span{
     font-size: 1.5em;
     font-family: 'Bicubik';
@@ -31,7 +31,9 @@
     justify-content: space-around;
     margin-top: 20px;
 }
-
+.anchor{
+    display: contents;
+}
 .card{
     cursor: pointer;
     width: 100%;
@@ -58,7 +60,9 @@
 }
 
 .active{
-    display: block;
+    height: 38vh;
+    padding: 10px 10px 20px 10px;
+
 }
 
 @media screen and (min-width: 768px) {
