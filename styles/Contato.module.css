@@ -1,0 +1,38 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.backgroundWrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+}
+
+/* ABOUT */
+.about{
+    width: 100%;
+    height: 95vh;
+    padding: 30px 10px;
+}
+
+.title{
+    color: #00f5ce;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container{}
+
+@media screen and (min-width: 768px) {
+    .about{
+        width: 80%;
+        padding: 80px 10px;
+    }
+    
+}
+
