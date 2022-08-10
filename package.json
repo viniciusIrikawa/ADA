@@ -1,8 +1,11 @@
 {
+  "homepage": "https://github.com/viniciusIrikawa/ADA",
   "name": "ada",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -19,6 +22,7 @@
   },
   "devDependencies": {
     "eslint": "8.20.0",
-    "eslint-config-next": "12.2.3"
+    "eslint-config-next": "12.2.3",
+    "gh-pages": "^4.0.0"
   }
 }
