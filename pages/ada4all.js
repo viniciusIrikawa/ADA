@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import styles from '../styles/Ada4All.module.css'
 import ButtonMenu from '../components/ButtonMenu'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
@@ -12,14 +13,14 @@ export default function Ada4All() {
             id: 1, 
             name: 'Anatomia',
             description: 'Lorem ipsum dolor sit amet...',
-            image: 'images/haptx-vr-glove.jpg',
+            image: '/images/haptx-vr-glove.jpg',
             link: '#'
         },
         {
             id: 2, 
             name: 'Terapia Visual',
             description: 'Lorem ipsum dolor sit amet...',
-            image: 'images/haptx-vr-glove.jpg',
+            image: '/images/haptx-vr-glove.jpg',
             link: '#'
         }
     ])
@@ -28,14 +29,14 @@ export default function Ada4All() {
             id: 1, 
             name: 'Hardware 1',
             description: 'Lorem ipsum dolor sit amet...',
-            image: 'images/haptx-vr-glove.jpg',
+            image: '/images/haptx-vr-glove.jpg',
             link: '#'
         },
         {
             id: 2, 
             name: 'Hardware 2',
             description: 'Lorem ipsum dolor sit amet...',
-            image: 'images/haptx-vr-glove.jpg',
+            image: '/images/haptx-vr-glove.jpg',
             link: '#'
         }
     ])
@@ -77,14 +78,19 @@ export default function Ada4All() {
                     <div className={styles.cardProducts}>
                         {softwares.map(item => (
                             <div className={styles.card} key={item.id}>
-                                <img src={item.image} alt={item.name} className={styles.image} />
+                                <Image src={item.image} 
+                                       alt={item.name} 
+                                       className={styles.image}
+                                       width="800px"
+                                       height="500px"/>
 
                                 <div className={styles.cardContent}>
                                     <h4 className={styles.cardTitle}> {item.name}  </h4>
                                     <p className={styles.cardDescription}> {item.description} </p>
                                     <a href={item.link} 
                                        className={styles.cardButton}
-                                       target='_blank'> Conheça! 
+                                       target='_blank' 
+                                       rel="noopener noreferrer"> Conheça! 
                                     </a>
                                 </div>
 
@@ -100,14 +106,19 @@ export default function Ada4All() {
                     <div className={styles.cardProducts}>
                         {hardwares.map(item => (
                             <div className={styles.card} key={item.id}>
-                                <img src={item.image} alt={item.name} className={styles.image} />
+                                <Image src={item.image} 
+                                       alt={item.name} 
+                                       className={styles.image} 
+                                       width="800px"
+                                       height="500px"/>
 
                                 <div className={styles.cardContent}>
                                     <h4 className={styles.cardTitle}> {item.name}  </h4>
                                     <p className={styles.cardDescription}> {item.description} </p>
                                     <a href={item.link} 
                                        className={styles.cardButton}
-                                       target='_blank'> Conheça! 
+                                       target='_blank' 
+                                       rel="noopener noreferrer"> Conheça! 
                                     </a>
                                 </div>
 

@@ -3,7 +3,7 @@ import styles from '../styles/MetaValley.module.css'
 import ButtonMenu from '../components/ButtonMenu'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
-export default function metavalley() {
+export default function Metavalley() {
 
     return (
         <div >
