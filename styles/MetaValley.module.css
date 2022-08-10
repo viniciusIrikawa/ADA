@@ -7,12 +7,6 @@
     background: linear-gradient(45deg, #9c4be9, #bc25b6c4, #01dce6d6)
 }
 
-.backgroundWrapper{
-    width: 100%;
-    height: 100vh;
-    background-color: gray;
-}
-
 /* ABOUT */
 .about{
     width: 100%;
@@ -26,8 +20,6 @@
     align-items: center;
 }
 
-
-.container{}
 .description{
     display: flex;
     align-items: center;
@@ -39,7 +31,7 @@
     width: 100%;
     margin: 20px 0;
     font-size: 1.3em;
-    text-align: center;
+    text-align: justify;
 }
 
 .wrapperBtn{

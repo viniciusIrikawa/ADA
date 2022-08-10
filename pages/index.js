@@ -15,7 +15,7 @@ export default function Home() {
         <div className={styles.wrapperTitle}>
           <h1 className={styles.title}> Ada </h1>
         </div>
-        <video className={styles.videoBackground} 
+        <video className="videoBackground"
                 src="videos/video_background.mp4"
                 type="video/mp4"
                 autoPlay

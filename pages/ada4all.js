@@ -48,8 +48,14 @@ export default function Ada4All() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <section className={styles.backgroundWrapper}>
-                <h1> Ada 4 All </h1>
+            <section className="backgroundWrapper">
+                <video className="videoBackground"
+                    src="videos/video_background.mp4"
+                    type="video/mp4"
+                    autoPlay
+                    muted
+                    loop>
+                </video>
             </section >
 
             <main className={styles.main}>
@@ -89,7 +95,7 @@ export default function Ada4All() {
                 </section>
 
                 <section className={styles.hardware}>
-                    <h3 className={styles.title}> <ChevronRightIcon /> Hardwares </h3>
+                    <h3 className={styles.titleHardware}> <ChevronRightIcon /> Hardwares </h3>
 
                     <div className={styles.cardProducts}>
                         {hardwares.map(item => (

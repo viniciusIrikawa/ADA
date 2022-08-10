@@ -18,9 +18,3 @@
     user-select: none;
     text-align: center;
 }
-
-.videoBackground{
-    width: 100%;
-    filter: brightness(0.28);
-    z-index: -1;
-}

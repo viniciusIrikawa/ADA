@@ -14,8 +14,14 @@ export default function Contato() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <section className={styles.backgroundWrapper}>
-                <h1> Contato </h1>
+            <section className="backgroundWrapper">
+                <video className="videoBackground"
+                    src="videos/video_background.mp4"
+                    type="video/mp4"
+                    autoPlay
+                    muted
+                    loop>
+                </video>
             </section >
 
             <main className={styles.main}>

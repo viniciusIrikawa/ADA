@@ -48,8 +48,14 @@ export default function xmedstation() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <section className={styles.backgroundWrapper}>
-                <h1> xMed Station </h1>
+            <section className="backgroundWrapper">
+                <video className="videoBackground"
+                    src="videos/video_background.mp4"
+                    type="video/mp4"
+                    autoPlay
+                    muted
+                    loop>
+                </video>
             </section >
 
             <main className={styles.main}>
@@ -87,7 +93,7 @@ export default function xmedstation() {
                 </section>
 
                 <section className={styles.hardware}>
-                    <h3 className={styles.title}> <ChevronRightIcon /> Hardwares </h3>
+                    <h3 className={styles.titleHardware}> <ChevronRightIcon /> Hardwares </h3>
 
                     <div className={styles.cardProducts}>
                         {hardwares.map(item => (

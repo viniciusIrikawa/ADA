@@ -6,14 +6,6 @@
     padding: 0 10px;
 }
 
-.backgroundWrapper{
-    width: 100%;
-    height: 100vh;
-    background-color: gray;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-
-}
-
 /* ABOUT */
 .about{
     width: 100%;
@@ -27,17 +19,17 @@
     align-items: center;
 }
 
-
-.container{}
-
 .description p{
     width: 100%;
     margin: 20px 0;
     font-size: 1.3em;
-    text-align: center;
+    text-align: justify;
 }
 
 /* SOFTWARE */
+.software{
+    padding: 30px 0;
+}
 .titleSoftware{
     display: flex;
     justify-content: end;
@@ -116,7 +108,9 @@
 }
 
 /* HARDWARE */
-
+.hardware{
+    padding: 30px 0;
+}
 .cardProducts {
     display: flex;
     flex-direction: row;
@@ -191,7 +185,7 @@
         width: 80%;
         padding: 80px 10px;
     }
-
+    
     /* SOFTWARES */
     .cardProducts{
         justify-content: center;
@@ -199,6 +193,15 @@
     .card{
         width: 40%;
         margin: 1%;
+    }
+
+    .titleSoftware{
+        margin-right: 8%;
+    }
+    
+    /* HARDWARES */
+    .titleHardware{
+        margin-left: 8%;
     }
 }
 
