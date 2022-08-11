@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Ada4All.module.css'
 import ButtonMenu from '../components/ButtonMenu'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
@@ -68,10 +69,9 @@ export default function Ada4All() {
                             <p> 
                                 O Projeto <strong> Ada 4 All </strong> tem como missão tornar o Metaverso acessível a todos e assim transformar a educação. O Time Ada é formado por Neurocientistas e Neuroengenheiros que compreendem as bases científicas do processo de ensino-aprendizagem e memória. Dessa maneira, entendemos que a tecnologia da realidade estendida (RV, RA e MR)  são ferramentas essenciais que irão auxiliar a nova era da educação imersiva. Acesse já a plataforma Ada 4 all.
                             </p>
-                            <a href="/ada4allapps"
-                               className={styles.btnComecar}
-                               rel="noopener noreferrer"> Comecar!
-                            </a>
+                            <Link href="/ada4allapps" rel="noopener noreferrer">
+                               <a className={styles.btnComecar}> Conheca! </a>
+                            </Link>
                         </div>
                     {/* </div> */}
                 </section>
@@ -91,11 +91,9 @@ export default function Ada4All() {
                                 <div className={styles.cardContent}>
                                     <h4 className={styles.cardTitle}> {item.name}  </h4>
                                     <p className={styles.cardDescription}> {item.description} </p>
-                                    <a href={item.link} 
-                                       className={styles.cardButton}
-                                       target='_blank' 
-                                       rel="noopener noreferrer"> Conheça! 
-                                    </a>
+                                    <Link href={item.link} rel="noopener noreferrer">
+                                        <a className={styles.cardButton} target='_blank'> Conheça! </a>
+                                    </Link>
                                 </div>
 
                                 <div className={styles.borderSquare}></div>
@@ -119,11 +117,9 @@ export default function Ada4All() {
                                 <div className={styles.cardContent}>
                                     <h4 className={styles.cardTitle}> {item.name}  </h4>
                                     <p className={styles.cardDescription}> {item.description} </p>
-                                    <a href={item.link} 
-                                       className={styles.cardButton}
-                                       target='_blank' 
-                                       rel="noopener noreferrer"> Conheça! 
-                                    </a>
+                                    <Link href={item.link} rel="noopener noreferrer"> 
+                                       <a className={styles.cardButton} target='_blank'> Conheça! </a>
+                                    </Link>
                                 </div>
 
                                 <div className={styles.borderSquare}></div>
