@@ -24,16 +24,16 @@ const SliderCards = () => {
     return (
         <>
             <main className='cards-container'>
-                <h1 class='title'> <ChevronRightIcon/> Conheca nossos Apps </h1>
+                <h1 className='title'> <ChevronRightIcon/> Conheca nossos Apps </h1>
 
-                <ul class="wrapper-cards">
+                <ul className="wrapper-cards">
                     {cards.map( card => (
-                        <li class="flip-card" key={card.id}>
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
+                        <li className="flip-card" key={card.id}>
+                            <div className="flip-card-inner">
+                                <div className="flip-card-front">
                                     <img src={card.imgFront}/>
                                 </div>
-                                <div class="flip-card-back">
+                                <div className="flip-card-back">
                                     <p> Acesse pelo QR Code </p>
                                     <img src={card.qrcode}/>
                             </div>
