@@ -63,13 +63,17 @@ export default function Ada4All() {
                 <section className={styles.about}>
                     <h3 className={styles.title}> <ChevronRightIcon /> Ada 4 All  </h3>
 
-                    <div className={styles.container}>
+                    {/* <div className={styles.container}> */}
                         <div className={styles.description}>
                             <p> 
                                 O Projeto <strong> Ada 4 All </strong> tem como missão tornar o Metaverso acessível a todos e assim transformar a educação. O Time Ada é formado por Neurocientistas e Neuroengenheiros que compreendem as bases científicas do processo de ensino-aprendizagem e memória. Dessa maneira, entendemos que a tecnologia da realidade estendida (RV, RA e MR)  são ferramentas essenciais que irão auxiliar a nova era da educação imersiva. Acesse já a plataforma Ada 4 all.
                             </p>
+                            <a href="#"
+                               className={styles.btnComecar}
+                               rel="noopener noreferrer"> Comecar!
+                            </a>
                         </div>
-                    </div>
+                    {/* </div> */}
                 </section>
 
                 <section className={styles.software}>

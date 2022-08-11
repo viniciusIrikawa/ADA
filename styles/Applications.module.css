@@ -9,6 +9,15 @@
     overflow-y: scroll;
     transition: .5s;
 }
+.container::-webkit-scrollbar{
+    width: 5px;
+}
+
+.container::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.199);
+}
+
 .span{
     font-size: 1.5em;
     font-family: 'Bicubik';
