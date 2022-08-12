@@ -76,10 +76,11 @@ p{
   overflow-Y: hidden;
   padding: 0 0 10px 0;
   cursor: pointer;
+  position: relative;
 }
 
 .wrapper-cards::-webkit-scrollbar{
-  height: 13px;
+  height: 16px;
 }
 
 .wrapper-cards::-webkit-scrollbar-thumb:horizontal{

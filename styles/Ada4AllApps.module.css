@@ -1,17 +1,12 @@
-.main{
+/* .main{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 0 10px;
-}
+} */
 
 .container{
     height: 100vh;
-}
-
-@media screen and (min-width: 768px) {
-    
-
 }
 

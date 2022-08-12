@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-// import '../styles/SliderCards.css'
+import styles from '../styles/SliderCards.module.css'
 
 const SliderCards = () => {
     const [cards, setCards] = useState([
@@ -23,19 +23,19 @@ const SliderCards = () => {
 
     return (
         <>
-            <main className='cards-container'>
-                <h1 className='title'> <ChevronRightIcon/> Conheca nossos Apps </h1>
+            <main className={styles.cardsContainer}>
+                <h1 className={styles.title}> <ChevronRightIcon/> Conheca nossos Apps </h1>
 
-                <ul className="wrapper-cards">
+                <ul className={styles.wrapperCards}>
                     {cards.map( card => (
-                        <li className="flip-card" key={card.id}>
-                            <div className="flip-card-inner">
-                                <div className="flip-card-front">
-                                    <img src={card.imgFront}/>
+                        <li className={styles.flipCard} key={card.id}>
+                            <div className={styles.flipCardInner}>
+                                <div className={styles.flipCardFront}>
+                                    <img src={card.imgFront} className={styles.imgFront}/>
                                 </div>
-                                <div className="flip-card-back">
-                                    <p> Acesse pelo QR Code </p>
-                                    <img src={card.qrcode}/>
+                                <div className={styles.flipCardBack}>
+                                    <p className={styles.paragraph}> Acesse aqui </p>
+                                    <img src={card.qrcode} className={styles.imgBack}/>
                             </div>
                             </div>
                         </li>

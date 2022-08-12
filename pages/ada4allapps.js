@@ -23,7 +23,9 @@ export default function Ada4AllApps() {
                 </video>
             </section >
 
-            <SliderCards/>
+            <main className={styles.container}>
+                <SliderCards/>
+            </main>
             
             <ButtonMenu />
         </div>
