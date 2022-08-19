@@ -1,5 +1,5 @@
 import React from 'react'
-import Cards from '../cards.json'
+import Cards from '../api/cards.json'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import styles from '../styles/SliderCards.module.css'
 

@@ -3,28 +3,9 @@ import Image from 'next/image'
 import styles from '../styles/QuemSomos.module.css'
 import ButtonMenu from '../components/ButtonMenu'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import { useState } from 'react';
+import team from '../api/members.json'
 
 export default function QuemSomos() {
-
-    const [team, setTeam] = useState([
-        {id: 1, name: 'Tássia Nunes', function: 'CTO', logo: '/images/logo.png', imgprofile: '/images/tassia_nunes.jpeg'},
-        {id: 2, name: 'Tâmara Nunes', function: 'CEO', logo: '/images/logo.png', imgprofile: '/images/tamara_nunes.jpeg'},
-        {id: 3, name: 'Jehnifer Marques',function: 'CO-CEO', logo: '/images/logo.png', imgprofile: '/images/jhenifer_marques.jpeg'},
-        {id: 4, name: 'João Paulo', function: 'Desenvolvedor RV', logo: '/images/logo.png', imgprofile: '/images/joao_paulo.jpeg'},
-        {id: 5, name: 'Rodrigo Amaral', function: 'Modelador 3D', logo: '/images/logo.png', imgprofile: '/images/rodrigo_amaral.png'},
-        {id: 6, name: 'Mário Fernando', function: 'Desenvolvedor Hardware', logo: '/images/logo.png', imgprofile: '/images/mario_fernando.jpeg'},
-        {id: 7, name: 'Vinícius Irikawa', function: 'Desenvolvedor Front End', logo: '/images/logo.png', imgprofile: '/images/vinicius_irikawa.jpeg'},
-        {id: 8, name: 'Matheus Augusto', function: 'Desenvolvedor RV', logo: '/images/logo.png', imgprofile: '/images/matheus.jpeg'},
-        {id: 9, name: 'Aerton Castro', function: 'Engenheiro de Software e Game Dev', logo: '/images/logo.png', imgprofile: '/images/aerton_castro.jpeg'},
-        {id: 10, name: 'Yago Souto', function: 'Desenvolvedor Hardware e Pesquisador Hardware', logo: '/images/logo.png', imgprofile: '/images/yago_souto.jpeg'},
-        {id: 11, name: 'Gustavo Bruno', function: 'Desenvolvedor Hardware', logo: '/images/logo.png', imgprofile: '/images/gustavo_bruno.jpeg'},
-        {id: 12, name: 'Victor Abdalla', function: 'Desenvolvedor Hardware', logo: '/images/logo.png', imgprofile: '/images/victor_abdalla.jpeg'},
-        {id: 13, name: 'Cleiton Mariano', function: 'Desenvolvedor Hardware', logo: '/images/logo.png', imgprofile: '/images/cleiton_mariano.jpeg'},
-        {id: 14, name: 'Igor Thiago', function: 'Head Administrativo', logo: '/images/logo.png', imgprofile: '/images/igor_thiago.jpeg'},
-        {id: 15, name: 'Rubens Fonseca', function: 'Engenheiro Têxtil', logo: '/images/logo.png', imgprofile: '/images/rubens_fonseca.jpeg'} 
-    ])
-
     return (
         <div >
             <Head>
