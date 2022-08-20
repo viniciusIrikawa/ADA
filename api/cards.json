@@ -2,61 +2,25 @@
     {
         "id": 1,
         "name": "App 1", 
-        "imgFront": "/images/metavalley.png", 
+        "imgFront": "/images/dino.jpeg", 
         "qrcode": "/images/fakeqrcode.jpg"
     },
     {
         "id": 2,
         "name": "App 2", 
-        "imgFront": "/images/metavalley.png", 
+        "imgFront": "/images/dino.jpeg", 
         "qrcode": "/images/fakeqrcode.jpg"
     },
     {
         "id": 3,
         "name": "App 3", 
-        "imgFront": "/images/metavalley.png", 
+        "imgFront": "/images/dino.jpeg", 
         "qrcode": "/images/fakeqrcode.jpg"
     },
     {
         "id": 4,
         "name": "App 4", 
-        "imgFront": "/images/metavalley.png", 
-        "qrcode": "/images/fakeqrcode.jpg"
-    },
-    {
-        "id": 5,
-        "name": "App 5", 
-        "imgFront": "/images/metavalley.png", 
-        "qrcode": "/images/fakeqrcode.jpg"
-    },
-    {
-        "id": 6,
-        "name": "App 6", 
-        "imgFront": "/images/metavalley.png", 
-        "qrcode": "/images/fakeqrcode.jpg"
-    },
-    {
-        "id": 7,
-        "name": "App 7", 
-        "imgFront": "/images/metavalley.png", 
-        "qrcode": "/images/fakeqrcode.jpg"
-    },
-    {
-        "id": 8,
-        "name": "App 8", 
-        "imgFront": "/images/metavalley.png", 
-        "qrcode": "/images/fakeqrcode.jpg"
-    },
-    {
-        "id": 9,
-        "name": "App 9", 
-        "imgFront": "/images/metavalley.png", 
-        "qrcode": "/images/fakeqrcode.jpg"
-    },
-    {
-        "id": 10,
-        "name": "App 10", 
-        "imgFront": "/images/metavalley.png", 
+        "imgFront": "/images/dino.jpeg", 
         "qrcode": "/images/fakeqrcode.jpg"
     }
 ]

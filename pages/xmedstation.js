@@ -13,14 +13,14 @@ export default function XmedStation() {
             id: 1, 
             name: 'Anatomia',
             description: 'Lorem ipsum dolor sit amet...',
-            image: '/images/haptx-vr-glove.jpg',
+            image: '/images/anatomia.jpeg',
             link: '#'
         },
         {
             id: 2, 
-            name: 'Terapia Visual',
+            name: 'Med Eyes',
             description: 'Lorem ipsum dolor sit amet...',
-            image: '/images/haptx-vr-glove.jpg',
+            image: '/images/medeyes.jpeg',
             link: '#'
         }
     ])

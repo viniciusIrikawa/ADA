@@ -1,4 +1,3 @@
-/*teste*/
 .cardsContainer{
     height: 100vh;
     display: flex;
@@ -23,7 +22,7 @@
   }
   
   .wrapperCards::-webkit-scrollbar{
-    height: 16px;
+    display: none;
   }
   
   .wrapperCards::-webkit-scrollbar-thumb:horizontal{
@@ -91,6 +90,11 @@
   }
   
   @media screen and (min-width: 768px) {
+    .wrapperCards::-webkit-scrollbar{
+      height: 16px;
+      display: block;
+    }
+
     .title{
       margin-left: 2%;
     }

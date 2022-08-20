@@ -15,7 +15,7 @@ export default function Ada4AllApps() {
 
             <section className="backgroundWrapper">
                 <video className="videoBackground"
-                    src="videos/video_background.mp4"
+                    src="videos/backgroundDino.mp4"
                     type="video/mp4"
                     autoPlay
                     muted
