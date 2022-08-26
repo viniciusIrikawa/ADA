@@ -49,14 +49,9 @@ export default function XmedStation() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <section className="backgroundWrapper">
-                <video className="videoBackground"
-                    src="videos/video_background.mp4"
-                    type="video/mp4"
-                    autoPlay
-                    muted
-                    loop>
-                </video>
+            <section className={styles.backgroundWrapper}>
+                <img className={styles.bgMobile} src="/images/xmed_back_mobile.jpeg" />
+                <img className={styles.bgDesktop} src="/images/xmed_back_desktop.jpeg" />
             </section >
 
             <main className={styles.main}>

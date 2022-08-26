@@ -6,6 +6,20 @@
     padding: 0 10px;
 }
 
+/* BACKGROUND IMAGE */
+.backgroundWrapper{
+    width: 100vw;
+}
+
+.bgDesktop,
+.bgMobile{
+    width: 100vw;
+}
+.bgDesktop{
+    display: none;
+}
+
+
 /* ABOUT */
 .about{
     width: 100%;
@@ -118,6 +132,14 @@
         padding: 80px 10px;
     }
     
+    /* BACKGROUND IMAGE */
+    .bgDesktop{
+        display: block;
+    }
+    .bgMobile{
+        display: none;
+    }
+
     /* SOFTWARES */
     .cardProducts{
         justify-content: center;
